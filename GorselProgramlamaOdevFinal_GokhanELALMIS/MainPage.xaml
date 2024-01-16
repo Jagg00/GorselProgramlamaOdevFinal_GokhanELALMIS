@@ -3,43 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GorselProgramlamaOdevFinal_GokhanELALMIS.MainPage">
 
-    <Shell.Root>
-        <FlyoutItem>
-            <ShellContent ContentTemplate="{DataTemplate local:HomePage}" />
-            <TabBarIsVisible>true</TabBarIsVisible>
-        </FlyoutItem>
-    </Shell.Root>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
 
-    <Shell.FlyoutHeader>
-        <StackLayout>
-            <Image Source="Images/imagge.jpg"
-                   WidthRequest="200"
-                   HeightRequest="200"
-                   Aspect="AspectFill" />
+        <Button Text="H" Clicked="OnHamburgerMenuClicked" />
 
-            <Label Text="Gökhan Elalmış" HorizontalOptions="CenterAndExpand"
-                   FontSize="30"
-                   TextColor="Gray" />
+        <Frame Grid.Row="1" Padding="20">
+            <StackLayout>
+                <Image Source="Images/imagge.jpg"
+                       WidthRequest="200"
+                       HeightRequest="200"
+                       Aspect="AspectFill" />
 
-            <Label Text="Bartın Üniversitesi Bilgisayar Mühendisliği"
-                   FontSize="25"
-                   TextColor="Gray" />
+                <Label Text="Gökhan Elalmış" HorizontalOptions="CenterAndExpand"
+                       FontSize="30"
+                       TextColor="Gray" />
 
-            <Label Text="Ödev-2" HorizontalOptions="CenterAndExpand"
-                   FontSize="45"
-                   TextColor="Gray" />
-        </StackLayout>
-    </Shell.FlyoutHeader>
+                <Label Text="Bartın Üniversitesi Bilgisayar Mühendisliği"
+                       FontSize="25"
+                       TextColor="Gray" />
 
-    <Shell.FlyoutFooter>
-        <StackLayout>
-            <Button Text="Giriş" Command="{Binding NavigateToGiris}" />
-            <Button Text="Kurlar" Command="{Binding NavigateToKurlar}" />
-            <Button Text="Haberler" Command="{Binding NavigateToHaberler}" />
-            <Button Text="Hava Durumu" Command="{Binding NavigateToHavaDurumu}" />
-            <Button Text="Yapılacaklar" Command="{Binding NavigateToYapilacaklar}" />
-            <Button Text="Ayarlar" Command="{Binding NavigateToAyarlar}" />
-        </StackLayout>
-    </Shell.FlyoutFooter>
+                <Label Text="Ödev-2" HorizontalOptions="CenterAndExpand"
+                       FontSize="45"
+                       TextColor="Gray" />
+            </StackLayout>
+        </Frame>
+    </Grid>
 
 </ContentPage>
