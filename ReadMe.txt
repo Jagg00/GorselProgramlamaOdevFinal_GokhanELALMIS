@@ -1,4 +1,4 @@
-Severity	Code	Description	Project	File	Line	Suppression State
+﻿Severity	Code	Description	Project	File	Line	Suppression State
 Error		DEP0600: Deployment failed. Exception - The stub received bad data.
 
 The stub received bad data. [0x800706F7]	GorselProgramlamaOdevFinal_GokhanELALMIS			
@@ -12,3 +12,7 @@ Error	XA5301	Failed to generate Java type for class: AndroidX.Core.View.Accessib
    at Xamarin.Android.Tasks.GenerateJavaStubs.CreateJavaSources(IEnumerable`1 newJavaTypes, TypeDefinitionCache cache, MarshalMethodsClassifier classifier, Boolean useMarshalMethods)	GorselProgramlamaOdevFinal_GokhanELALMIS	C:\Program Files\dotnet\packs\Microsoft.Android.Sdk.Windows\34.0.43\tools\Xamarin.Android.Common.targets	1513	
 
    hocam bu hatalardan dolayi projeyi bir yerden sonra calistiramadim. cok arastirdim
+
+   https://drive.google.com/file/d/1NDCs1u7w5K70W2Kc1sD-ds3yQv3vtsmd/view?usp=drive_link
+
+   projenin bir kısmında olan bir video
