@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaOdevFinal_GokhanELALMIS.KurlarPage"
+             Title="KurlarPage">
+    
+    <StackLayout x:Name="stackLayout">
+        <ListView x:Name="currencyListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout>
+                            <Label Text="{Binding Key}" FontAttributes="Bold"/>
+                            <Label Text="{Binding Value.Satis}" />
+                            <Label Text="{Binding Value.Alis}" />
+                            <Label Text="{Binding Value.Degisim}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
